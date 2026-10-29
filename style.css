@@ -1,0 +1,202 @@
+
+/* GENERAL SETTINGS */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222222;
+    background-color: #eeeeee;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 45px 20px;
+    border-bottom: 4px solid #888888;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 5px;
+}
+
+header p {
+    color: #cccccc;
+    margin-bottom: 0;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #444444;
+}
+
+.navbar a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 22px;
+}
+
+.navbar a:hover {
+    background-color: #dddddd;
+    color: #222222;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* WELCOME SECTION */
+.hero {
+    background-color: #ffffff;
+    padding: 55px 30px;
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #666666;
+}
+
+.hero h2 {
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 15px auto;
+    color: #555555;
+}
+
+/* MAIN LINK */
+.main-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 22px;
+    background-color: #222222;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #222222;
+}
+
+.main-link:hover {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+/* CONTENT SECTIONS */
+.content-section {
+    padding: 30px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    scroll-margin-top: 15px;
+}
+
+.content-section h2 {
+    margin-top: 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #888888;
+}
+
+.content-section p {
+    color: #444444;
+}
+
+/* PROJECT CARDS */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.project-card {
+    flex: 1 1 220px;
+    padding: 20px;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom: 8px;
+}
+
+.project-card p {
+    font-size: 14px;
+}
+
+/* CONTACT LINK */
+.contact-link {
+    color: #222222;
+    text-decoration: underline;
+}
+
+.contact-link:hover {
+    color: #777777;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222222;
+    color: #cccccc;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 27px;
+        letter-spacing: 3px;
+    }
+
+    .hero {
+        padding: 35px 18px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .content-section {
+        padding: 22px 18px;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 12px 14px;
+    }
+}
